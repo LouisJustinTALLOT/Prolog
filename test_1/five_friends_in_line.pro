@@ -9,3 +9,10 @@ Tina is in front of Andy.
 Tina is behind Chris.
 */
 
+is_in_front(chris, andy).
+is_in_front(joey, chris).
+is_in_front(tina, andy).
+
+is_behind(kelsey, andy).
+is_behind(tina, joey).
+is_behind(tina, chris).
