@@ -16,3 +16,12 @@ is_in_front(tina, andy).
 is_behind(kelsey, andy).
 is_behind(tina, joey).
 is_behind(tina, chris).
+
+is_behind(X,Y) :- 
+    % write('ici'), 
+    % nl, 
+    % % fail.
+    is_in_front(X,Y), ! , fail.
+    
+    
+is_in_front(X,Y) :- is_behind(X,Y), ! , fail.
