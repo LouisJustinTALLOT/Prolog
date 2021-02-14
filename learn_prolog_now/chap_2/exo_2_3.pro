@@ -12,6 +12,14 @@ sentence(Word1,Word2,Word3,Word4,Word5):-
       word(determiner,Word4),
       word(noun,Word5).
 
+find_sentences() :-
+      sentence(A, B, C, D, E),
+      write(A), write(' '), 
+      write(B), write(' '), 
+      write(C), write(' '), 
+      write(D), write(' '), 
+      write(E), write(' '), nl.
+
 /*
 toutes les phrases que l'on peut obtenir :
 
