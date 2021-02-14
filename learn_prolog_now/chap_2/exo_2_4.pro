@@ -129,6 +129,55 @@ crossword_no_repeat() :-
     write(' '), write(DG), write(' '), write(EG), write(' '), write(FG), write(' '), nl, 
     write('-------'), nl, nl, nl.
 
+/*
+Résultat sans répétitions : 
+on obtient en fait deux fois la même grille pivotée :
+
+?- crossword_no_repeat().
+Mots obtenus :
+H1 : astante
+H2 : cobalto
+H3 : pistola
+V1 : astoria
+V2 : baratto
+V3 : statale
+Grille complétée :
+-------
+ a b s 
+astante
+ t r a 
+cobalto
+ r t a 
+pistola
+ a o e 
+-------
+
+
+true ;
+Mots obtenus :
+H1 : astoria
+H2 : baratto
+H3 : statale
+V1 : astante
+V2 : cobalto
+V3 : pistola
+Grille complétée :
+-------
+ a c p 
+astoria
+ t b s 
+baratto
+ n l o 
+statale
+ e o a 
+-------
+
+
+true.
+
+*/
+
+
 
 /* résultat :
 
