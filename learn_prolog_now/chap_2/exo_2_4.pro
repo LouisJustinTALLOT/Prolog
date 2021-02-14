@@ -55,10 +55,29 @@ crossword(H1, H2,H3, V1, V2, V3) :-
 /* résultat :
 
 ?- crossword(H1, H2, H3, V1, V2, V3).
+
+-------
+ a b s 
+astante
+ t r a 
+baratto
+ n t a 
+statale
+ e o e 
+-------
 H1 = V1, V1 = astante,
 H2 = V2, V2 = baratto,
 H3 = V3, V3 = statale ;
 
+-------
+ a b s 
+astante
+ t r a 
+cobalto
+ r t a 
+pistola
+ a o e 
+-------
 H1 = astante,
 H2 = cobalto,
 H3 = pistola,
@@ -66,6 +85,15 @@ V1 = astoria,
 V2 = baratto,
 V3 = statale ;
 
+-------
+ a c p 
+astoria
+ t b s 
+baratto
+ n l o 
+statale
+ e o a 
+-------
 H1 = astoria,
 H2 = baratto,
 H3 = statale,
@@ -73,13 +101,40 @@ V1 = astante,
 V2 = cobalto,
 V3 = pistola ;
 
+-------
+ a c p 
+astoria
+ t b s 
+cobalto
+ r l o 
+pistola
+ a o a 
+-------
 H1 = V1, V1 = astoria,
 H2 = V2, V2 = cobalto,
 H3 = V3, V3 = pistola ;
 
+-------
+ b b s 
+baratto
+ r r a 
+baratto
+ t t a 
+statale
+ o o e 
+-------
 H1 = H2, H2 = V1, V1 = V2, V2 = baratto,
 H3 = V3, V3 = statale ;
 
+-------
+ c b s 
+cobalto
+ b r a 
+baratto
+ l t a 
+statale
+ o o e 
+-------
 H1 = V1, V1 = cobalto,
 H2 = V2, V2 = baratto,
 H3 = V3, V3 = statale.
