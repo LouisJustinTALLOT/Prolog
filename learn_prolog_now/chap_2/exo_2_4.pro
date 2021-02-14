@@ -39,7 +39,18 @@ crossword(H1, H2,H3, V1, V2, V3) :-
 
     CB = DF, 
     CD = EF, 
-    CF = FF.
+    CF = FF,
+
+    nl, write('-------'), nl,
+    write(' '), write(DA), write(' '), write(EA), write(' '), write(FA), write(' '), nl,
+    write(AA),  write(AB), write(AC),  write(AD), write(AE),  write(AF), write(AG),  nl,
+    write(' '), write(DC), write(' '), write(EC), write(' '), write(FC), write(' '), nl,
+    write(BA),  write(BB), write(BC),  write(BD), write(BE),  write(BF), write(BG),  nl,
+    write(' '), write(DE), write(' '), write(EE), write(' '), write(FE), write(' '), nl,
+    write(CA),  write(CB), write(CC),  write(CD), write(CE),  write(CF), write(CG),  nl,
+    write(' '), write(DG), write(' '), write(EG), write(' '), write(FG), write(' '), nl, 
+    write('-------'), nl.
+
 
 /* résultat :
 
