@@ -11,6 +11,7 @@ travelFromTo(A, B) :- directTrain(A, B); directTrain(B, A).
 
 travelFromTo(A,B) :-
     directTrain(A, C),
-    travelFromTo(C, B).
+    travelFromTo(C, B),
+    write(C), nl. 
 
 travelFromTo(A,B) :- travelFromTo(B,A). 
