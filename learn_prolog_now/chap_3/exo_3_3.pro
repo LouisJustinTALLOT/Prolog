@@ -7,7 +7,10 @@ directTrain(metz,fahlquemont).
 directTrain(nancy,metz).
 
 travelFromTo(Ville, Ville).
-travelFromTo(A, B) :- directTrain(A, B).
+travelFromTo(A, B) :- directTrain(A, B); directTrain(B, A).
+
 travelFromTo(A,B) :-
     directTrain(A, C),
     travelFromTo(C, B).
+
+travelFromTo(A,B) :- travelFromTo(B,A). 
