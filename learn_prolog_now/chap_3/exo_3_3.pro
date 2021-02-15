@@ -6,3 +6,8 @@ directTrain(fahlquemont,stAvold).
 directTrain(metz,fahlquemont).
 directTrain(nancy,metz).
 
+travelFromTo(Ville, Ville).
+travelFromTo(A, B) :- directTrain(A, B).
+travelFromTo(A,B) :-
+    directTrain(A, C),
+    travelFromTo(C, B).
